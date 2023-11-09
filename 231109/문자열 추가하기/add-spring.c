@@ -13,7 +13,6 @@ int main() {
 	for(int i = 0; i < 5; i++){
 		a[len + i] = b[i];
     }
-	
 	a[len + 5] = '\0';
 	
 	printf("%s", a);
