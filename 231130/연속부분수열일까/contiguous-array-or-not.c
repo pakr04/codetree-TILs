@@ -19,8 +19,9 @@ int fun(int *x,int *y,int n,int m)
               break; }
     }
     if(n-start<m-1) return 0;
+    j=1;
     for(i=start+1;i<n;i++)
-        if(x[i]!=y[i]) return 0;
+        if(x[i]!=y[start+j++]) return 0;
     return 1;
 }
 int main() {
