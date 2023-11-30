@@ -20,10 +20,9 @@ int fun(int *x,int *y,int n,int m)
     }
     if(n-start<m-1) return 0;
     j=1;
-    for(i=start+1;i<n;i++,j++)
+    for(i=start;i<n;i++,j++)
         if(x[i]!=y[start+j]) return 0;
-        else
-            return 1;
+    return 1;
 }
 int main() {
     int n,m,i,j,*p1,*p2,sw;
