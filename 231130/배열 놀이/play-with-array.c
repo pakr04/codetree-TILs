@@ -17,7 +17,7 @@ void proc(int a,int b,int c,int *p)
                 return;
             }
         }
-        printf("0");
+        printf("0\n");
     }
     else
     {
