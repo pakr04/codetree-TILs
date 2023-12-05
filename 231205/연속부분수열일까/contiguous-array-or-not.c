@@ -17,7 +17,7 @@ int fun(int *x,int *y,int n,int m)
         if(x[i]==y[0])
             { 
                 flag=1;
-                for(j=1;j<m;j++)
+            for(j=1;j<m;j++)
                 {
                     if(i+j>=n){flag=0; break;}
                     if(x[i+j]!=y[j]) {flag=0; break;}
