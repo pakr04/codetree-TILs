@@ -15,17 +15,15 @@ int fun(int *x,int *y,int n,int m)
     for(i=0;i<n;i++)
     {
         if(x[i]==y[0])
-            { 
-                flag=1;
-            for(j=1;j<m;j++)
-                {
+            {   flag=1;
+            for(j=1;j<m;j++){
                     if(i+j>=n){flag=0; break;}
                     if(x[i+j]!=y[j]) {flag=0; break;}
                 }
                 if(j==m) break;
             }
     }
-  
+    return flag;
 }
 int main() {
     int n,m,i,j,*p1,*p2,sw;
